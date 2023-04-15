@@ -52,7 +52,7 @@ export default function Form(){
 
       });
       generateTotal(newData);
-      console.log(newData)
+      console.log(tableData)
       return newData;
     });
 

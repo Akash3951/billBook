@@ -8,6 +8,7 @@ function App() {
   const [extraRow, setExtraRow]=React.useState([{id:1}]);
 
   const [extraAmount, setExtraAmount]= React.useState({id:500, amount:0})
+  console.log(extraAmount)
   
   const [total, setTotal]=React.useState(0);
 

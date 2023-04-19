@@ -101,13 +101,13 @@ table>.heading>th{
 
 .invoice-container{
   box-sizing: border-box;
-  background-color: #a1aec0;
+  background-color: white;
   padding: 3% 8%;
   height: 100vh;
 }
 
 .contact{
   position: absolute;
-  right: 0;
+  right: 10px;
   display: flex;
 }

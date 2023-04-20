@@ -71,20 +71,27 @@ export default function GenerateInvoice(props){
             </tr>
           </thead>
           <tbody>
-            {props.data.map(row => (           
-              <tr>
-                <td style={inputStyle}>{row.date}</td>
-                <td style={inputStyle}>{row.vechile}</td>
-                <td style={inputStyle}>{row.place}</td>
-                <td style={inputStyle}>{row.quantity}</td>
-                <td style={inputStyle}>{row.amount}</td>
-              </tr>
+            {props.data.map(row => ( 
+              row.id===500 ? 
+                <tr key={row.id} style={{marginTop:'30px'}}>
+                  <th colSpan='4' style={{border:'none', fontWeight:'650'}}>OLD LAB BALANCE</th>
+                  <th style={inputStyle}>{row.amount}</th>
+                </tr>
+                : 
+                    
+                <tr key={row.id}>
+                  <td style={inputStyle}>{row.date}</td>
+                  <td style={inputStyle}>{row.vechile}</td>
+                  <td style={inputStyle}>{row.place}</td>
+                  <td style={inputStyle}>{row.quantity}</td>
+                  <td style={inputStyle}>{row.amount}</td>
+                </tr>
             ))}
             <tr>
               <td colspan="5"><hr style={{ borderTop: '2px solid black', }} /></td>
             </tr>
             <tr>
-              <th colSpan="4" height="30">GRAND TOTAL:</th>
+              <th colSpan="4" height="30" style={{fontWeight:'1000', fontSize:'1.2rem'}}>GRAND TOTAL:</th>
               <th>{props.total}</th>
             </tr>
             <tr>

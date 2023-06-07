@@ -7,9 +7,6 @@ function App() {
 
   const [extraRow, setExtraRow]=React.useState([{id:1}]);
 
-  // consttraAmount, setExtraAmount]= React.useState({id:500, amount:0})
-  // console.log(extraAmount) [ex
-  
   const [total, setTotal]=React.useState(0);
 
   const [tableData, setTableData]=React.useState([
